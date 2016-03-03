@@ -3,7 +3,6 @@
   "cowlib": {:hex, :cowlib, "1.0.2"},
   "db_connection": {:hex, :db_connection, "0.2.4"},
   "decimal": {:hex, :decimal, "1.1.1"},
-  "ecto": {:hex, :ecto, "1.1.4"},
   "fs": {:hex, :fs, "0.9.2"},
   "geo": {:hex, :geo, "1.0.1"},
   "gettext": {:hex, :gettext, "0.10.0"},
