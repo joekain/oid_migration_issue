@@ -9,3 +9,9 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+alias OidMigrationIssue.{Repo, GeoModel}
+
+%GeoModel{}
+|> GeoModel.changeset(%{geom: %Geo.Point{coordinates: {30, -90}, srid: 4326}})
+|> Repo.insert!
