@@ -2,7 +2,7 @@ defmodule OidMigrationIssue.GeoModel do
   use OidMigrationIssue.Web, :model
 
   schema "geo_models" do
-    field :geom, :string
+    field :geom, Geo.Point
 
     timestamps
   end

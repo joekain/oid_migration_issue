@@ -3,7 +3,7 @@ defmodule OidMigrationIssue.GeoModelTest do
 
   alias OidMigrationIssue.GeoModel
 
-  @valid_attrs %{geom: "some content"}
+  @valid_attrs %{geom: %Geo.Point{coordinates: {30, -90}, srid: 4326}}
   @invalid_attrs %{}
 
   test "changeset with valid attributes" do
