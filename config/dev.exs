@@ -39,4 +39,5 @@ config :oid_migration_issue, OidMigrationIssue.Repo,
   password: "postgres",
   database: "oid_migration_issue_dev",
   hostname: "localhost",
-  pool_size: 10
+  pool_size: 10,
+  extensions: [{Geo.PostGIS.Extension, library: Geo}]
